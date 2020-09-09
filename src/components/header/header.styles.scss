@@ -1,0 +1,24 @@
+.nav-item{
+    font-weight: 700;
+
+    &:hover{
+        border-bottom: 2px solid #4285F4 !important;
+        transform: scale(1.15)
+    }
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+.navbar-toggler:focus{
+    outline: 0 !important;
+}
+
+.navbar-brand{
+    font-size: 1em;
+}
+
+.navbar-collapse{
+    // overflow: hidden;
+}

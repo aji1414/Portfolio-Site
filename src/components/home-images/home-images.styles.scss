@@ -1,0 +1,12 @@
+.image-container{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    // padding-left: 10px;
+}
+
+.images{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
