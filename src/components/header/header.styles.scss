@@ -1,24 +1,28 @@
-.nav-item{
-    font-weight: 700;
 
-    &:hover{
-        border-bottom: 2px solid #4285F4 !important;
-        transform: scale(1.15)
+.header{
+    // background-color: #4285F4 !important;
+
+    .nav-item{
+        font-weight: 700;
+        padding:0 50px !important;
+
+        &:hover{
+            border-bottom: 2px solid #4285F4 !important;
+            transform: scale(1.15);
+            transition: 0.6s;
+        }
     }
-}
 
-.navbar-collapse{
-    text-align: center;
-}
+    .navbar-collapse{
+        text-align: center;
+    }
 
-.navbar-toggler:focus{
-    outline: 0 !important;
-}
+    .navbar-toggler:focus{
+        outline: 0 !important;
+    }
 
-.navbar-brand{
-    font-size: 1em;
-}
+    .navbar-brand{
+        font-size: 1em;
+    }
 
-.navbar-collapse{
-    // overflow: hidden;
 }

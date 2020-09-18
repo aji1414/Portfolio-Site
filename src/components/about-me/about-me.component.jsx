@@ -4,7 +4,7 @@ import "./about-me.styles.scss";
 import CustomButton from "../custom-button/custom-button.component";
 
 const AboutMe = () => (
-    <div className="about-me">
+    <div className="about-me mx-auto">
         <span className="job-title">Junior Full Stack Developer</span>
         <h1 className="my-name">Aji Lawal</h1>
         <p className="personal-profile mb-5">

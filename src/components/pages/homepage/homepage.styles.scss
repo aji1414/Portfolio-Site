@@ -1,6 +1,22 @@
-.homepage{
+.homepage1{
     display: flex;
     flex-direction: row;
+    
     padding: 10px 20px;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 900px) {
+    .homepage1 {
+        flex-direction: column;
+
+        & .image-container{
+            width:100%;
+        }
+    }
+  }
+
+  .homepage2{
+      width:70%;
+      margin: 0 auto;
+  }
