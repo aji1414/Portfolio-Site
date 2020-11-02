@@ -1,5 +1,5 @@
 import React from "react";
-// import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "./header.styles.scss";
 
 const Header = () =>(
@@ -10,11 +10,11 @@ const Header = () =>(
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
-                <a className="nav-item nav-link active" href="/">About Me</a>
-                <a className="nav-item nav-link active" href="/">Education & Experience</a>
-                <a className="nav-item nav-link active" href="/">Portfolio</a>
-                <a className="nav-item nav-link active" href="/">Contact Me</a>
+                <NavLink exact activeClassName="active" className="nav-item nav-link" to="/">Home </NavLink>
+                <NavLink exact activeClassName="active" className="nav-item nav-link" to="/education">Education & Experience</NavLink>
+                <NavLink exact activeClassName="active" className="nav-item nav-link" to="/portfolio">Portfolio</NavLink>
+                <NavLink exact activeClassName="active" className="nav-item nav-link" to="/personal">Personal</NavLink>
+                <NavLink exact activeClassName="active" className="nav-item nav-link" to="/contact-me">Contact Me</NavLink>
                 </div>
             </div>
         </nav>

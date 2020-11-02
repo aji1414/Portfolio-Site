@@ -1,12 +1,17 @@
 import React from "react";
+import "./skills.styles.scss";
 
-const Skills = () => (
-    <div className="skills-container">
-        <h1 className="skills-title">What do I bring to the table?</h1>
-        <div className="skills">
 
+const Skills = ({ skill, description, children}) => {
+    return( 
+        <div className="skills px-3">
+            <div className="logo">{children}</div>
+            <div className="description">
+                <h2>{skill}</h2>
+                <p>{description}</p>
+            </div>
         </div>
-    </div>
-) 
+    );
+};
 
 export default Skills;

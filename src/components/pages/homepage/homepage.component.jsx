@@ -2,7 +2,7 @@ import React from "react";
 import AboutMe from "../../about-me/about-me.component";
 
 import HomeImages from "../../home-images/home-images.component";
-import Skills from "../../Skills/skills.component";
+import SkillsContainer from "../../Skills-Container/skills-container.component";
 
 
 import "./homepage.styles.scss";
@@ -14,7 +14,7 @@ const Homepage = () => (
             <AboutMe />
         </div>
         <div className="homepage2">
-            <Skills />
+            <SkillsContainer />
         </div>
     </div>
 )
