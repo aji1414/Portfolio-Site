@@ -23,7 +23,7 @@ class WorkExperience extends Component{
 
     render(){
         return(
-            <div className="work-experience col-12 col-md-9">
+            <div className="work-experience col-12 col-md-7">
                 <h1 className="work-experience-title mb-5">Work Experience</h1>
                 <ul className="job-list">
                     {this.state.jobs.map(job => (
