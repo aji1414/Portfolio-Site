@@ -1,14 +1,15 @@
 .work-experience{
     
+    .work-experience-title{
+        text-decoration: underline solid #b2ccf7;
+    }
+
     .job-list .job-list-bullets{
         list-style: none;
-        border: 1px solid rgb(141, 139, 139);
-        cursor: pointer;
+        border: 1px solid rgb(139, 140, 141);
+        font-weight: 600;
         &:nth-of-type(odd){
-            background: #6f7271a8;
-            color:white;
-            font-weight: 600;
-            
+            background: #b2ccf7;            
         }
         &:nth-of-type(even){
             background: white;

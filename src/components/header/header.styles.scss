@@ -1,14 +1,15 @@
 
 .header{
-    // background-color: #4285F4 !important;
-
+    background-color: #b2ccf7 !important;
+    
     .nav-item{
         font-weight: 700;
         padding:0 50px !important;
 
         &:hover{
-            border-bottom: 2px solid #4285F4 !important;
+            border-bottom: 2px solid #ffffff !important;
             transform: scale(1.2);
+            opacity: 1;
             transition: 0.6s;
         }
     }
@@ -26,7 +27,7 @@
     }
 
     .active{
-        text-decoration: underline solid #4285F4;
+        text-decoration: underline solid #ffffff;
         transform: scale(1.3);
     }
 
