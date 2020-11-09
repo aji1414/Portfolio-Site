@@ -11,7 +11,7 @@ const Technologies = (props) =>{
     
 
     return(
-        <div className="technologies col-12 col-md-5">
+        <div className="technologies col-12 col-md-5 mt-5 mt-md-0">
             <h1 className="technologies-title mb-5 text-center">Tech Stack and Skills</h1>
 
             <div className="sub-tech-group d-flex flex-column align-items-center mb-4">
@@ -67,7 +67,7 @@ Technologies.defaultProps = {
     tools:[
         {skill:"Git", rating:50},
         {skill:"Responsive Design", rating:90},
-        {skill:"API Interacton", rating:80}
+        {skill:"API Interaction", rating:80}
     ],
     softSkills:[
         {skill:"Teamwork", rating:90},

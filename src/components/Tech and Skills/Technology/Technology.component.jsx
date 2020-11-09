@@ -2,7 +2,7 @@ import React from "react";
 import "./Technology.styles.scss";
 
 import ProgressBar from "react-percent-bar";
-import bar from "react-bars";
+// import bar from "react-bars";
 
 const Technology = ({technology, rating}) =>{
     return(
@@ -14,7 +14,7 @@ const Technology = ({technology, rating}) =>{
             // colorShift={true} 
             fillColor="#b2ccf7"
             percent={rating}
-            width={"200px"}
+            width={"320px"}
             borderColor={"rgb(150 ,150 ,150)"}
             />
         </div>
