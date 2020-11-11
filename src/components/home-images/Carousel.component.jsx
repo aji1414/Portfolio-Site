@@ -19,7 +19,7 @@ function CarouselContainer() {
                     <img
                     className="d-block images"
                     src={photo.src}
-                    alt="home image"
+                    alt="home"
                     />
                     {/* caption */}
                     <div className="caption-box">

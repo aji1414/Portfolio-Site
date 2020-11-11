@@ -58,6 +58,7 @@ Technologies.defaultProps = {
     ],
     frameworksAndLibraries:[
         {skill:"React ", rating:80},
+        {skill:"jQuery", rating:90},
         {skill:"NodeJS", rating:70},
         {skill:"Bootstrap", rating:80},
         {skill:"MongoDB", rating:70},

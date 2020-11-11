@@ -16,14 +16,15 @@ const techList = [
     ["BOOTSTRAP", false],
     ["HTML/CSS", false],
     ["MONGODB", false],
-    ["FIREBASE", false]
+    ["FIREBASE", false],
+    ["JQUERY", false]
 ];
 
 const projectList = [
     {name:"Red Sea E-Commerce Shop",thumbnail:YelpCamp, visible:true, tech:["ALL","REACT", "FIREBASE"]},
-    {name:"Movie Sandpit Review Site",thumbnail: YelpCamp, visible:true, tech:["ALL","BOOTSTRAP","NODE JS", "JAVASCRIPT", "MONGODB"]},
-    {name:"Yelp Camp Review Site",thumbnail: YelpCamp, visible:true, tech:["ALL","HTML/CSS","NODE JS", "JAVASCRIPT", "MONGODB"]},
-    {name:"F1 Reaction Test Game",thumbnail: YelpCamp, visible:true, tech:["ALL","HTML/CSS", "JAVASCRIPT"]},
+    {name:"Movie Sandpit Review Site",thumbnail: YelpCamp, visible:true, tech:["ALL","JQUERY","BOOTSTRAP","NODE JS", "JAVASCRIPT", "MONGODB"]},
+    {name:"Yelp Camp Review Site",thumbnail: YelpCamp, visible:true, tech:["ALL","HTML/CSS","JQUERY","NODE JS", "JAVASCRIPT", "MONGODB"]},
+    {name:"F1 Reaction Test Game",thumbnail: YelpCamp, visible:true, tech:["ALL","HTML/CSS","JQUERY", "JAVASCRIPT"]},
     {name:"Yahtzee Game",thumbnail: YelpCamp, visible:true, tech:["ALL","REACT", "BOOTSTRAP"]},
     {name:"Portfolio Site",thumbnail: YelpCamp, visible:true, tech:["ALL","REACT", "BOOTSTRAP"]}
 ];

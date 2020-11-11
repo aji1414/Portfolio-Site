@@ -13,20 +13,24 @@ const SkillsContainer = () => (
                 <Skills 
                     skill="Ecommerce" 
                     description="Full eCommerce solutions. Customizable online storefront, payment gateways, and shopping cart will be directly integrated into your website and provide value for your client base">
-                    <FontAwesomeIcon icon = {faShoppingCart} /></Skills>
+                    <FontAwesomeIcon icon = {faShoppingCart} />
+                </Skills>
                 <Skills 
                     skill="App Development" 
                     description="Full-stack applications from front-end to back-end with clean, modern designs – optimized for performance, search engines, and strengthening your company’s brand while ensuring ease of use & simplicity for your audience. " >
-                    <FontAwesomeIcon icon = {faMobileAlt} /></Skills>
+                    <FontAwesomeIcon icon = {faMobileAlt} />
+                </Skills>
                     
                 <Skills 
                     skill="Responsive Web Design" 
                     description="Responsive webpage layout that fluidly resizes across devices for optimal user experience. A responsive website is key to increase search engine optimization and customer experience" >
-                    <FontAwesomeIcon icon = {faWindowMaximize} /></Skills>
+                    <FontAwesomeIcon icon = {faWindowMaximize} />
+                </Skills>
                 <Skills 
                     skill="Web Development" 
                     description="Creating strong and interactive websites with HTML, CSS and JS with custom plugins, features and animations." >
-                    <FontAwesomeIcon icon = {faWifi} /></Skills>
+                    <FontAwesomeIcon icon = {faWifi} />
+                </Skills>
             </div>
             
         </div>
