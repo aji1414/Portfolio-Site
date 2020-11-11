@@ -7,7 +7,7 @@ const PortfolioItem = ({project}) =>{
             <div className="card bg-dark text-white">
                 <img className="card-img" src={project.thumbnail} alt="Card" />
                 <div className="card-img-overlay">
-                    <h5 className="card-title">{project.name}</h5>
+                    <h4 className="card-title text-center">{project.name}</h4>
                     <ul className="techListBullets d-none">
                         <p className="card-text">{project.tech.map(projectName =>(
                             projectName !== "ALL" && <li>{projectName}</li>
