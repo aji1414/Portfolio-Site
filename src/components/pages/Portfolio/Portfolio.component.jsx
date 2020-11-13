@@ -3,7 +3,7 @@ import "./Portfolio.styles.scss";
 
 import SelectTech from "./SelectTech/SelectTech";
 import PortfolioPreview from "./PortfolioPreview/PortfolioPreview.component";
-// import F1Game from "../../../assets/portfolioThumbnails/F1 Game.jpg";
+
 import YelpCamp from "../../../assets/portfolioThumbnails/YelpCamp.jpg";
 
 
@@ -21,12 +21,12 @@ const techList = [
 ];
 
 const projectList = [
-    {name:"Red Sea E-Commerce Shop",thumbnail:YelpCamp, visible:true, tech:["ALL","REACT", "FIREBASE"]},
-    {name:"Movie Sandpit Review Site",thumbnail: YelpCamp, visible:true, tech:["ALL","JQUERY","BOOTSTRAP","NODE JS", "JAVASCRIPT", "MONGODB"]},
-    {name:"Yelp Camp Review Site",thumbnail: YelpCamp, visible:true, tech:["ALL","HTML/CSS","JQUERY","NODE JS", "JAVASCRIPT", "MONGODB"]},
-    {name:"F1 Reaction Test Game",thumbnail: YelpCamp, visible:true, tech:["ALL","HTML/CSS","JQUERY", "JAVASCRIPT"]},
-    {name:"Yahtzee Game",thumbnail: YelpCamp, visible:true, tech:["ALL","REACT", "BOOTSTRAP"]},
-    {name:"Portfolio Site",thumbnail: YelpCamp, visible:true, tech:["ALL","REACT", "BOOTSTRAP"]}
+    {name:"Red Sea E-Commerce Shop",thumbnail:YelpCamp, visible:true,link:"", tech:["ALL","REACT", "FIREBASE"]},
+    {name:"Movie Sandpit Review Site",thumbnail: YelpCamp, visible:true,link:"", tech:["ALL","JQUERY","BOOTSTRAP","NODE JS", "JAVASCRIPT", "MONGODB"]},
+    {name:"Yelp Camp Review Site",thumbnail: YelpCamp, visible:true,link:"", tech:["ALL","HTML/CSS","JQUERY","NODE JS", "JAVASCRIPT", "MONGODB"]},
+    {name:"F1 Reaction Test Game",thumbnail: YelpCamp, visible:true,link:"", tech:["ALL","HTML/CSS","JQUERY", "JAVASCRIPT"]},
+    {name:"Yahtzee Game",thumbnail: YelpCamp, visible:true,link:"", tech:["ALL","REACT", "BOOTSTRAP"]},
+    {name:"Portfolio Site",thumbnail: YelpCamp, visible:true,link:"", tech:["ALL","REACT", "BOOTSTRAP"]}
 ];
 
 const Portfolio = (props) =>{

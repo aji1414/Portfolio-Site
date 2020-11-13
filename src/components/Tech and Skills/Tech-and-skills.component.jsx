@@ -6,10 +6,8 @@ import Technology from "./Technology/Technology.component";
 
 
 const Technologies = (props) =>{
-
     const {languages, frameworksAndLibraries, tools, softSkills} = props
     
-
     return(
         <div className="technologies col-12 col-md-5 mt-5 mt-md-0">
             <h1 className="technologies-title mb-5 text-center">Tech Stack and Skills</h1>

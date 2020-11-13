@@ -1,0 +1,11 @@
+.contactMeContainer{
+    // cursor:grab;
+    .contactOption{
+        border:1px solid rgb(236, 234, 234);
+        font-size: 1.3em;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

@@ -6,6 +6,21 @@
     background: linear-gradient(90deg, rgba(178,204,247,1) 0%, rgba(178,204,247,1) 10%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2ccf7",endColorstr="#ffffff",GradientType=1);
     
+    a{
+        color: rgb(70, 61, 61);
+        
+        .fontAwesome{
+            cursor: pointer;
+            &:hover{
+                color:rgb(255, 255, 255);
+                transform: scale(1.2);
+            }
+        
+        }
+    }
+
+    
+
     .nav-item{
         font-weight: 700;
         padding:0 50px !important;

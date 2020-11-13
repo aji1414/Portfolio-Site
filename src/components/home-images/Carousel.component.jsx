@@ -6,7 +6,7 @@ import football2 from "../../assets/eric-reid.jpg";
 import football1 from "../../assets/football-photo.jpg";
 import football3 from "../../assets/football3.jpg";
 
-function CarouselContainer() {
+const CarouselContainer = () => {
     const photos = [
         {src:football1, caption:"European Game for London Warriors"},
         {src:football2, caption:"Rookie season game 5 vs The Blitz"},
@@ -15,13 +15,10 @@ function CarouselContainer() {
     return(
         <Carousel>
             {photos.map(photo => (
-                <Carousel.Item>
-                    <img
-                    className="d-block images"
-                    src={photo.src}
-                    alt="home"
-                    />
-                    {/* caption */}
+                <Carousel.Item 
+                key={photo.src}
+                >
+                    <img className="d-block images" src={photo.src} alt="home"/>
                     <div className="caption-box">
                         <h3>{photo.caption}</h3>
                     </div>
