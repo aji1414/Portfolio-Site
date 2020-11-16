@@ -1,15 +1,23 @@
 import React from "react";
 import "./ContactMe.styles.scss";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransitions } from "../../../App";
 
 import Map from "../../Map/Map.component";
 import ContactForm from "../../ContactForm/ContactForm.component";
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCheck, faInbox, faPlane} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faInbox, faPlane } from "@fortawesome/free-solid-svg-icons";
 
-const ContactMe = () =>{
-    return(
-        <div className="contactMeContainer">
+const ContactMe = () => {
+    return (
+        <motion.div
+            exit="out"
+            animate="in"
+            initial="initial"
+            variants={pageVariants}
+            transition={pageTransitions}
+            className="contactMeContainer">
             <Map />
             <div className="contactBox row d-flex col-11 mt-5 justify-content-around mx-auto">
                 <div className="contactOption col-12 col-md-4 d-flex flex-column align-items-center">
@@ -27,7 +35,7 @@ const ContactMe = () =>{
             </div>
 
             <ContactForm />
-        </div>
+        </motion.div>
     )
 };
 

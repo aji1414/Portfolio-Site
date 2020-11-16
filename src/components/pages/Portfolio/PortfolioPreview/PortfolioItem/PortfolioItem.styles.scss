@@ -1,9 +1,10 @@
 .portfolioItem{
     .card{   
-        cursor: pointer;
+        // cursor: pointer;
         & :hover {
-            .techListBullets{
+            .techListBullets,.seeMore{
                 display: block !important;
+                transition: 9.5s !important;
             }
             .card-img{
                 opacity: 0.2 !important;
@@ -12,6 +13,18 @@
         .card-img{
             height: 230px !important;
             opacity: 1;
+        }
+
+        .seeMore{
+            position: absolute;
+            bottom:0%;
+            right:0%;
+            height: 30px;
+            width: 60px;
+            font-size: 0.8em;
+            padding: 0px;
+            text-align: center;
+            // opacity: 0;
         }
         
     }  

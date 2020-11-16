@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./PortfolioPreview.styles.scss";
 
 import PortfolioItem from "./PortfolioItem/PortfolioItem.component";
@@ -11,71 +11,82 @@ import uuid from "react-uuid";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-      position: "absolute",
-      width: 400,
-      height: 600,
-      backgroundColor: theme.palette.background.paper,
-      border: "2px solid #000",
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3)
+        position: "absolute",
+        width: 400,
+        height: 770,
+        backgroundColor: "rgb(223, 232, 247)",
+        color: "black",
+        fontWeight: "700",
+        border: "2px solid #000",
+        boxShadow: theme.shadows[10],
+        borderRadius: "20px",
+        padding: theme.spacing(2, 4, 3)
     }
-  }));
+}));
 
-const PortfolioPreview = ({projects, displayTech}) => {
+const PortfolioPreview = ({ projects, displayTech }) => {
     const classes = useStyles();
 
     // getModalStyle is not a pure function, we roll the style only on the first render
-    const [modalStyle] = useState({top:"50%", left:"50%", transform: `translate(-50%, -50%)`});
+    const [modalStyle] = useState({ top: "50%", left: "50%", transform: `translate(-50%, -50%)` });
     const [open, setOpen] = useState(false);
     const [modalDetails, setModalDetails] = useState({
-        name:"", 
-        tech:[], 
-        thumbnail:"", 
-        visible:false
+        name: "",
+        tech: [],
+        thumbnail: "",
+        visible: false,
+        description: "",
+        link: ""
     });
 
     const handleOpen = (project) => {
         setModalDetails({
-            name:project.name,
-            tech:project.tech,
-            thumbnail:project.thumbnail,
-            visible:project.visible});
+            name: project.name,
+            tech: project.tech,
+            thumbnail: project.thumbnail,
+            visible: project.visible,
+            description: project.description,
+            link: project.link
+        });
 
         setOpen(true);
     };
 
-    const handleClose = () => {
-        setOpen(false);
-    };
+    const handleClose = () => setOpen(false);
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
-          <h1 id="simple-modal-title">{modalDetails.name}</h1>
-          <p id="simple-modal-description">
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </p>
-          <ul className="modalTechBulletsList">
-              {modalDetails.tech.map(tech => (
-                  tech !== "ALL" && <li key={uuid()} className="modalTechBullets">{tech}</li>
-              ))}
-          </ul>
+            <h1 className="simple-modal-title text-center">{modalDetails.name}</h1>
+            <div className="thumbnailContainer d-flex justify-content-center"><img className="modal-img" src={modalDetails.thumbnail} alt="modal-prev"></img></div>
+            <p className="text-center font-italic mt-4" id="simple-modal-description">{modalDetails.description}</p>
+            <h4 className="techListTitle mt-4">Technology</h4>
+            <ul className="modalTechBulletsList">
+                {modalDetails.tech.map(tech => (
+                    tech !== "ALL" && <li key={uuid()} className="modalTechBullets">{tech}</li>
+                ))}
+            </ul>
+            <button
+                onClick={(e) => {
+                    e.preventDefault()
+                    window.open(modalDetails.link, "_blank")
+                }} type="button" className="btn border border-info"><a className="font-weight-bold" href={modalDetails.link}>CHECK IT OUT</a></button>
         </div>
-      );
+    );
 
 
-    return(
+    return (
         <div className="portfolioPreview mt-5 d-flex row mx-auto">
             {projects.map(project => (
-                project.tech.includes(displayTech) && <PortfolioItem handleOpen={handleOpen} key={uuid()} project={project}/> 
+                project.tech.includes(displayTech) && <PortfolioItem handleOpen={handleOpen} key={uuid()} project={project} />
             ))}
-        <button onClick={handleOpen}>OPEN</button>
+
             <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="simple-modal-title"
-                    aria-describedby="simple-modal-description"
-                >
-                    {body}
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+            >
+                {body}
             </Modal>
         </div>
     )

@@ -1,3 +1,14 @@
 .portfolioPreview{
-    height: 500px;
+    position: relative;
+    #simple-modal-title{
+        text-align: center;
+    }
+
+    .goToProjectBtn{
+        & :hover{
+            background: white !important;
+        }
+    }
+
+    
 }
