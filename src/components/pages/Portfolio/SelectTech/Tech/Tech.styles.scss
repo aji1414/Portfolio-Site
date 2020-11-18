@@ -1,8 +1,12 @@
 .tech{
     cursor: pointer;
-
+    font-weight: 700;
     &.currentTech{
         background: #b2ccf7;
         // transition: 2.5s;
+    }
+
+    &:active{
+        transition: 0.7s;
     }
 }

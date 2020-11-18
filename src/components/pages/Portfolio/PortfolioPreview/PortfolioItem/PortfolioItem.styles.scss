@@ -1,4 +1,13 @@
 .portfolioItem{
+
+    &:hover{
+        transform: scale(1.05);
+        transition: 1.1s;
+        .card-img{
+            opacity: 1 !important;
+        }
+        
+    }
     .card{   
         // cursor: pointer;
         & :hover {
@@ -6,18 +15,16 @@
                 display: block !important;
                 transition: 9.5s !important;
             }
-            .card-img{
-                opacity: 0.2 !important;
-            }
+            
         }
         .card-img{
             height: 230px !important;
-            opacity: 1;
+            opacity: 0.6;
         }
 
         .seeMore{
             position: absolute;
-            bottom:0%;
+            top:0%;
             right:0%;
             height: 30px;
             width: 60px;
