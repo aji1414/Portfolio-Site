@@ -26,7 +26,7 @@ const ContactMe = () => {
                 </div>
                 <div className="contactOption col-12 col-md-4 d-flex flex-column align-items-center">
                     <div className="icon"><FontAwesomeIcon size="6x" icon={faInbox} /></div>
-                    <div className="details mt-4">ajisofteng@gmail.com</div>
+                    <div className="details mt-4">ajsofteng1414@gmail.com</div>
                 </div>
                 <div className="contactOption col-12 col-md-4 d-flex flex-column align-items-center">
                     <div className="icon"><FontAwesomeIcon size="6x" icon={faCheck} /></div>

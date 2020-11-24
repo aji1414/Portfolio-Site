@@ -1,10 +1,11 @@
 import React from "react";
 import "./Filler.styles.scss";
 
-const Filler = () => {
+const Filler = ({ percent }) => {
     return (
-        <div className="filler">
-
+        <div
+            className="filler"
+            style={{ width: `${percent}%` }}>
         </div>
     )
 };

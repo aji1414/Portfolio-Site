@@ -9,7 +9,7 @@ const Job = ({ children, jobTasks, visible, expandJob, jobTitle, jobDates, jobLo
                 <div className="title-and-location-box row">
                     <div onClick={() => expandJob(`${jobTitle}`)} className="pl-1 mb-1 expand-icon col1"><i className={visible ? "fas fa-minus fa-2x" : "fas fa-plus fa-2x"}></i></div>
                     <div className="col-6"><h5 className="job-title">{children}</h5></div>
-                    <div className="locationAndDurationBox d-flex flex-column col-5">
+                    <div className="locationAndDurationBox d-flex flex-column col-4">
                         <div className="job-location">{jobLocation}</div>
                         <div className="job-duration mt-2 text-left font-italic">{jobDates}</div>
                     </div>

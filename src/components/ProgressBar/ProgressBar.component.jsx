@@ -1,12 +1,12 @@
 import React from "react";
 import "./ProgressBar.styles.scss";
 
+import Filler from "./Filler/Filler.component";
 
-
-const ProgressBar = (props) => {
+const ProgressBar = ({ percent }) => {
     return (
         <div className="progressBar">
-            <Filler />
+            <Filler percent={percent} />
         </div>
     )
 }
