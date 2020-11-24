@@ -8,26 +8,25 @@ const AboutMe = () => (
         <span className="job-title">Junior Full Stack Developer</span>
         <h1 className="my-name">Aji Lawal</h1>
         <p className="personal-profile mb-5">
-        Hey, I'm AJ. I'm a former actuary - turned data analyst - and now turned software developer! 
-        I design, build immersive and beautiful web applications through 
-        carefully crafted code and user-centric design.
+            Hey, I'm AJ. I'm a former actuary - turned data analyst - and now turned software developer!
+            I design, build immersive and beautiful web applications through
+            carefully crafted code and user-centric design.
         </p>
         <p className="personal-profile mb-5">
-        I am naturally curious, a problem solver, and a continuous learner. 
-        My dream is traveling the world learning different cultures, while 
-        also coding and building applications that help people solve their problems.
+            I am naturally curious, a problem solver, and a continuous learner.
+            My dream is traveling the world learning different cultures, while
+            also coding and building applications that help people solve their problems.
         </p>
 
         <p className="personal-profile mb-5">
-        So are you looking for a hard-working, communicative & caring developer? 
-        I am super excited to work on ambitious projects with positive people.
+            So are you looking for a hard-working, communicative & caring developer?
+            I am super excited to work on ambitious projects with positive people.
         </p>
         <p className="personal-profile">Please find my CV and contact details below.</p>
         <div className="button-group">
             <CustomButton className="buttons">Download CV</CustomButton>
-            <CustomButton className="buttons">Contact Me</CustomButton>
         </div>
-        
+
     </div>
 );
 
