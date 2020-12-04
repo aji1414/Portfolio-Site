@@ -17,7 +17,7 @@ const Header = () => {
     }
 
     return (
-        <nav className="header navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav className="header navbar  navbar-expand-lg navbar-light bg-light">
             <div className="nameAndSocials d-flex flex-column mr-4">
                 <h2><a className="navbar-brand" href="/">AJ Lawal</a></h2>
                 <div className="socials d-flex row  justify-content-around">

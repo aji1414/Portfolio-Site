@@ -3,14 +3,17 @@ import React from "react";
 import "./about-me.styles.scss";
 import CustomButton from "../custom-button/custom-button.component";
 
+const aboutMeParagraph =
+    'Hey, I\'m AJ.I\'m a former actuary - turned data analyst - and now turned software developer! \n\
+    I design, build immersive and beautiful web applications through \n\
+    carefully crafted code and user - centric design.'
+
 const AboutMe = () => (
     <div className="about-me mx-auto">
         <span className="job-title">Junior Full Stack Developer</span>
         <h1 className="my-name">Aji Lawal</h1>
         <p className="personal-profile mb-5">
-            Hey, I'm AJ. I'm a former actuary - turned data analyst - and now turned software developer!
-            I design, build immersive and beautiful web applications through
-            carefully crafted code and user-centric design.
+            {aboutMeParagraph}
         </p>
         <p className="personal-profile mb-5">
             I am naturally curious, a problem solver, and a continuous learner.

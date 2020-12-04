@@ -29,18 +29,16 @@ const validate = (values) => {
   return errors;
 };
 
-// const submitForm = (values) => {
-//   console.log(values);
-// };
 
-const submitForm = (event) => {
+const submitForm = (values) => {
+  const { fullName, email, subject, message } = values;
   sendeMail(
     apiKeys.TEMPLATE_ID,
     {
-      fullName: initialValues.fullName,
-      message: initialValues.message,
-      subject: initialValues.subject,
-      email: initialValues.email
+      fullName: fullName,
+      message: message,
+      subject: subject,
+      email: email
     }
   )
 }
@@ -50,19 +48,15 @@ const sendeMail = (TemplateID, variables) => {
     "gmail", TemplateID,
     variables
   ).then(res => {
-    initialValues = {
-      fullName: "",
-      email: "",
-      subject: "",
-      message: ""
-    };
     alert("Thanks for the email. I will get back to you ASAP!");
+    window.location.reload();
   })
     .catch(err => console.log(err));
 }
 
 
 const ContactForm = () => {
+
   return (
     <Formik
       initialValues={initialValues}
@@ -160,7 +154,7 @@ const ContactForm = () => {
                 type="submit"
                 className={!(dirty && isValid) ? "formButton disabledButton" : "formButton"}
                 disabled={!(dirty && isValid)}
-                onClick={submitForm}
+                onClick={() => submitForm(values)}
               >
                 Send Message
               </button>
