@@ -20,6 +20,15 @@
         .card-img{
             height: 230px !important;
             opacity: 0.6;
+            @media only screen and (max-width:1400px) and (min-width:992px){
+                object-fit:contain;
+            }
+        }
+
+        .card-title{
+            font-size: 2em;
+            color:rgb(57, 163, 224);
+            font-weight: 900;
         }
 
         .seeMore{

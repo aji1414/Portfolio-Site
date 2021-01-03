@@ -21,8 +21,15 @@ const Header = () => {
             <div className="nameAndSocials d-flex flex-column mr-4">
                 <h2><a className="navbar-brand" href="/">AJ Lawal</a></h2>
                 <div className="socials d-flex row  justify-content-around">
-                    <a href="https://github.com/aji1414"><FontAwesomeIcon size="2x" icon={faGithub} className="fontAwesome" /></a>
-                    <a href="https://www.linkedin.com/in/aji-lawal-909/"><FontAwesomeIcon size="2x" icon={faLinkedin} className="align-self-center fontAwesome" /></a>
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="https://github.com/aji1414"><FontAwesomeIcon size="2x" icon={faGithub} className="fontAwesome" /></a>
+                        <label class="d-block">Github</label>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="https://www.linkedin.com/in/aji-lawal-909/"><FontAwesomeIcon size="2x" icon={faLinkedin} className="align-self-center fontAwesome" /></a>
+                        <label class="d-block">LinkedIn</label>
+                    </div>
+                    
                 </div>
             </div>
 

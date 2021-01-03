@@ -12,23 +12,23 @@ const SkillsContainer = () => (
             <div className="skills-sub-container">
                 <Skills 
                     skill="Ecommerce" 
-                    description="Full eCommerce solutions. Customizable online storefront, payment gateways, and shopping cart will be directly integrated into your website and provide value for your client base">
+                    description="Full eCommerce solutions. Customizable online storefront with payment gateways and shopping cart directly integrated into your website">
                     <FontAwesomeIcon  icon={faShoppingCart} size="5x"/>
                 </Skills>
                 <Skills 
                     skill="App Development" 
-                    description="Full-stack applications from front-end to back-end with clean, modern designs – optimized for performance, search engines, and strengthening your company’s brand while ensuring ease of use & simplicity for your audience. " >
+                    description="Full-stack applications from front-end to back-end with clean, modern design – optimized for performance and search engine optimization" >
                     <FontAwesomeIcon  icon={faMobileAlt} size="5x" />
                 </Skills>
                     
                 <Skills 
                     skill="Responsive Web Design" 
-                    description="Responsive webpage layout that fluidly resizes across devices for optimal user experience. A responsive website is key to increase search engine optimization and customer experience" >
+                    description="Responsive webpage layouts that fluidly resize across all devices for optimal user experience. A responsive website is key to increase search engine optimization and customer experience and satisfaction" >
                     <FontAwesomeIcon  icon={faWindowMaximize} size="5x" />
                 </Skills>
                 <Skills 
                     skill="Web Development" 
-                    description="Creating strong and interactive websites with HTML, CSS and JS with custom plugins, features and animations." >
+                    description="Strong and interactive websites with HTML, CSS and JavsScript with custom plugins, features and animations" >
                     <FontAwesomeIcon icon = {faWifi} size="5x"/>
                 </Skills>
             </div>

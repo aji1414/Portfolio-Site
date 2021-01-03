@@ -34,11 +34,11 @@ const AboutMe = () => (
         </p>
 
         <ul class="interests">
-            <li>I played American football for 5 years with 2 of those at European level</li>
-            <li><strong>HUGE</strong> motor racing fan and regular competitor in online simulation racing and go karts</li>
-            <li>I <strong>love</strong> to read both non-fiction - and more recently fiction</li>
-            <li>Fluent in Spanish and currently learning French</li>
-            <li>Avid chess player - If you see completely distracted by my phone, there's a 95% chance I'm about to hand someone a checkmate :)</li>
+            <li class="mb-2">I played American football for 5 years with 2 of those at European level</li>
+            <li class="mb-2"><strong>HUGE</strong> motor racing fan and regular competitor in online simulation racing and go karts</li>
+            <li class="mb-2">I <strong>love</strong> to read both non-fiction - and more recently fiction</li>
+            <li class="mb-2">Fluent in Spanish and currently learning French</li>
+            <li class="mb-2">Avid chess player - If you find me completely distracted by my phone - chances are I'm not on twitter, I'm about to checkmate someone :)</li>
         </ul>
 
         <p className="personal-profile mb-3">
