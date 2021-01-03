@@ -10,6 +10,15 @@
         
     }
 
+    .contactLink{
+        text-decoration: underline;
+        color:rgb(114, 47, 158) !important;
+        font-weight: 700;
+        &:visited{
+            color:unset;
+        }
+    }    
+
     .job-title{
         font-style: italic;
     }

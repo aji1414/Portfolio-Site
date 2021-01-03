@@ -38,7 +38,7 @@ const AboutMe = () => (
             <li><strong>HUGE</strong> motor racing fan and regular competitor in online simulation racing and go karts</li>
             <li>I <strong>love</strong> to read both non-fiction - and more recently fiction</li>
             <li>Fluent in Spanish and currently learning French</li>
-            <li>Avid chess player - If you see completely distracted by my phone, there's a 95% I'm about to hand someone a checkmate :)</li>
+            <li>Avid chess player - If you see completely distracted by my phone, there's a 95% chance I'm about to hand someone a checkmate :)</li>
         </ul>
 
         <p className="personal-profile mb-3">
