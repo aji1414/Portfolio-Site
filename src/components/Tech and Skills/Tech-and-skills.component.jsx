@@ -49,23 +49,27 @@ const Technologies = (props) => {
 
 Technologies.defaultProps = {
     languages: [
+        { skill: "SQL", rating: 95 },
+        { skill: "Javascript - ES6", rating: 80 },
         { skill: "HTML & CSS", rating: 80 },
-        { skill: "Javascript - ES6", rating: 70 },
-        { skill: "Python", rating: 70 },
-        { skill: "SQL", rating: 95 }
+        { skill: "Python", rating: 70 }
     ],
     frameworksAndLibraries: [
-        { skill: "React ", rating: 80 },
-        { skill: "jQuery", rating: 90 },
-        { skill: "NodeJS", rating: 70 },
+        { skill: "React", rating: 90 },
+        { skill: "Redux(thunks, sagas, hooks)", rating: 80 },
         { skill: "Bootstrap", rating: 80 },
+        { skill: "Sass", rating: 80 },
+        { skill: "jQuery", rating: 80 },
+        { skill: "Graph ql", rating: 70},
+        { skill: "Flask", rating: 60 },
+        { skill: "NodeJS", rating: 70 },
         { skill: "MongoDB", rating: 70 },
         { skill: "Mongoose", rating: 70 },
         { skill: "Firebase", rating: 70 },
     ],
     tools: [
-        { skill: "Git", rating: 50 },
         { skill: "Responsive Design", rating: 90 },
+        { skill: "Git", rating: 80 },
         { skill: "API Interaction", rating: 80 }
     ],
     softSkills: [

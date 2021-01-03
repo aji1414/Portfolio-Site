@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import "./Portfolio.styles.scss";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransitions } from "../../../App";
-
+import projectList from "./ProjectList";
 
 
 import SelectTech from "./SelectTech/SelectTech";
 import PortfolioPreview from "./PortfolioPreview/PortfolioPreview.component";
-
-import YelpCamp from "../../../assets/portfolioThumbnails/YelpCamp.jpg";
-
 
 const techList = [
     ["ALL", true],
@@ -22,15 +19,6 @@ const techList = [
     ["MONGODB", false],
     ["FIREBASE", false],
     ["JQUERY", false]
-];
-
-const projectList = [
-    { description: "Mock E-commerce shop which accepts Card payments through Stripe API.", name: "Red Sea E-Commerce Shop", thumbnail: YelpCamp, visible: true, link: "", tech: ["ALL", "REACT", "FIREBASE"] },
-    { description: "Movie comparison site where users can also rate and store their favourite movie.s", name: "Movie Sandpit Review Site", thumbnail: YelpCamp, visible: true, link: "https://serene-beyond-29185.herokuapp.com/", tech: ["ALL", "JQUERY", "BOOTSTRAP", "NODE JS", "JAVASCRIPT", "MONGODB"] },
-    { description: "Campground review websites where users can add visited campgrounds and comment on others campground reviews.", name: "Yelp Camp Review Site", thumbnail: YelpCamp, visible: true, link: "", tech: ["ALL", "HTML/CSS", "JQUERY", "NODE JS", "JAVASCRIPT", "MONGODB"] },
-    { description: "Player reacts to five lights which is followed by onboard video of real F1 car starting a race.", name: "F1 Reaction Test Game", thumbnail: YelpCamp, visible: true, link: "", tech: ["ALL", "HTML/CSS", "JQUERY", "JAVASCRIPT"] },
-    { description: "Remake of the popular yahtzee game.", name: "Yahtzee Game", thumbnail: YelpCamp, visible: true, link: "", tech: ["ALL", "REACT", "BOOTSTRAP"] },
-    { description: "Porfolio website displaying my education, experiences and background.", name: "Portfolio Site", thumbnail: YelpCamp, visible: true, link: "", tech: ["ALL", "REACT", "BOOTSTRAP"] }
 ];
 
 const Portfolio = (props) => {

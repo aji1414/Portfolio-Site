@@ -1,13 +1,27 @@
 .work-experience{
+
+    
     
     .work-experience-title{
         text-decoration: underline solid #b2ccf7;
+
+        @media only screen and (max-width:768px){
+            text-align: center;
+        }
+    }
+
+    .job-list{
+
+        @media only screen and (max-width:768px){
+            padding-inline-start: unset;
+        }
     }
 
     .job-list .job-list-bullets{
         list-style: none;
         border: 1px solid rgb(139, 140, 141);
         font-weight: 600;
+        
         &:nth-of-type(odd){
             background: #b2ccf7;            
         }
