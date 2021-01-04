@@ -12,7 +12,7 @@ import uuid from "react-uuid";
 const useStyles = makeStyles((theme) => ({
     paper: {
         position: "absolute",
-        width: 700,
+        width: 400,
         height: 770,
         backgroundColor: "rgb(223, 232, 247)",
         color: "black",
@@ -28,7 +28,8 @@ const PortfolioPreview = ({ projects, displayTech }) => {
     const classes = useStyles();
 
     // getModalStyle is not a pure function, we roll the style only on the first render
-    const [modalStyle] = useState({ top: "50%", left: "50%", transform: `translate(-50%, -50%)` });
+    const [modalStyle] = useState({ top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
+    const [modalThumbnailStyle] = useState({width:"350px"});
     const [open, setOpen] = useState(false);
     const [modalDetails, setModalDetails] = useState({
         name: "",
@@ -57,7 +58,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
     const body = (
         <div style={modalStyle} className={classes.paper}>
             <h1 className="simple-modal-title text-center">{modalDetails.name}</h1>
-            <div className="thumbnailContainer d-flex justify-content-center"><img style={{width:"400px !important;"}} src={modalDetails.thumbnail} alt="modal-prev"></img></div>
+            <div className="thumbnailContainer d-flex justify-content-center"><img style={modalThumbnailStyle} src={modalDetails.thumbnail} alt="modal-prev"></img></div>
             <p className="text-center font-italic mt-4" id="simple-modal-description">{modalDetails.description}</p>
             <h4 className="techListTitle mt-4">Technology</h4>
             <ul className="modalTechBulletsList">
@@ -85,7 +86,8 @@ const PortfolioPreview = ({ projects, displayTech }) => {
                 onClose={handleClose}
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
-            >
+            >   
+                
                 {body}
             </Modal>
         </div>
