@@ -25,9 +25,9 @@ const CarouselContainer = () => {
                 key={photo.src}
                 >
                     <img className="d-block images" src={photo.src} alt="home"/>
-                    {/* <div className="caption-box">
+                    <div className="caption-box">
                         <h3>{photo.caption}</h3>
-                    </div> */}
+                    </div>
                 </Carousel.Item>
             ))}
         </Carousel>

@@ -12,7 +12,6 @@ const Header = () => {
 
     // function to close navbar once a linked has been clicked inside of it
     const closeNav = () => {
-        console.log("triggered")
         setNav(false);
     }
 
