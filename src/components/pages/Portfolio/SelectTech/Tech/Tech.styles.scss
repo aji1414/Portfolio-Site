@@ -1,8 +1,14 @@
 .tech{
     cursor: pointer;
     font-weight: 700;
+
+    &:hover{
+        transition: 0.4s;
+        border:1px solid #b2ccf7;
+    }
+
     &.currentTech{
-        background: #b2ccf7;
+        border:3px solid #b2ccf7; 
         // transition: 2.5s;
     }
 
