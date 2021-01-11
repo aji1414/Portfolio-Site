@@ -29,6 +29,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
 
     // getModalStyle is not a pure function, we roll the style only on the first render
     const [modalStyle] = useState({ top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
+    const [closeModal] = useState({background:"none",color:"red",fontSize:"2em", cursor:"pointer"})
     const [modalThumbnailStyle] = useState({width:"350px"});
     const [open, setOpen] = useState(false);
     const [modalDetails, setModalDetails] = useState({
@@ -57,6 +58,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
+            <span onClick={handleClose} style={closeModal}>&#10007;</span>
             <h1 className="simple-modal-title text-center">{modalDetails.name}</h1>
             <div className="thumbnailContainer d-flex justify-content-center"><img style={modalThumbnailStyle} src={modalDetails.thumbnail} alt="modal-prev"></img></div>
             <p className="text-center font-italic mt-4" id="simple-modal-description">{modalDetails.description}</p>

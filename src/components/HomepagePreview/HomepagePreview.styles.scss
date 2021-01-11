@@ -4,8 +4,6 @@
 
     .textContainer{
         text-align: center;
-        // justify-content: center;
-        color: rgb(8, 8, 8);
         position: absolute;
         top:50%;
         left:50%;
@@ -22,11 +20,13 @@
     }
 
     .enterButton{
-        background: white;
-        color: rgb(61, 61, 60);
+        background: rgb(160, 160, 160);
+        color: rgb(255, 255, 255);
+        font-weight: 900;
         font-size: 1.3em;
         outline: none;
-
+        border: 1px solid black;
+        
         &:hover{
             background: rgb(26, 95, 206);
             color:white;

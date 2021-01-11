@@ -30,7 +30,7 @@ const AboutMe = () => (
         </p> */}
 
         <p>
-            As you may have seen above or to your left, I have (too) many interests!
+            As you may have seen above or to your left, I have many interests!
         </p>
 
         <ul class="interests">
@@ -47,8 +47,7 @@ const AboutMe = () => (
             go to my <a class="contactLink" href="/contact-me">contact page</a> and shoot me an email!
         </p>
         
-        <CustomButton className="buttons">Download CV</CustomButton>
-
+        <CustomButton className="buttons"><a href="https://drive.google.com/file/d/1H8AI9yH_jLDFtCpv8NXpM9vMNOaQCfIB/view?usp=sharing" download>Download CV</a></CustomButton>
     </div>
 );
 
