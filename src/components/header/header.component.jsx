@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./header.styles.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +18,12 @@ const Header = () => {
     return (
         <nav className="header navbar  navbar-expand-lg navbar-light bg-light">
             <div className="nameAndSocials d-flex flex-column mr-4">
-                <h2><a className="navbar-brand" href="/">AJ Lawal</a></h2>
+                <h2>
+                    <Link className="navbar-brand" to="/"
+                    >
+                    AJ Lawal
+                    </Link>
+                </h2>
                 <div className="socials d-flex row  justify-content-around">
                     <div class="d-flex flex-column align-items-center">
                         <a href="https://github.com/aji1414"><FontAwesomeIcon size="2x" icon={faGithub} className="fontAwesome" /></a>
@@ -28,7 +33,6 @@ const Header = () => {
                         <a href="https://www.linkedin.com/in/aji-lawal-909/"><FontAwesomeIcon size="2x" icon={faLinkedin} className="align-self-center fontAwesome" /></a>
                         <label class="d-block">LinkedIn</label>
                     </div>
-                    
                 </div>
             </div>
 
