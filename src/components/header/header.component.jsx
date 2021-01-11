@@ -8,11 +8,11 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 
 const Header = () => {
-    const [nav, setNav] = useState(false)
+    // const [nav, setNav] = useState(false)
 
     // function to close navbar once a linked has been clicked inside of it
     const closeNav = () => {
-        setNav(false);
+        // setNav(false);
     }
 
     return (
