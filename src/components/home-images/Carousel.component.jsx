@@ -21,7 +21,8 @@ const CarouselContainer = () => {
     ];
     return(
         <Carousel>
-            {photos.map(photo => (
+            {
+            photos.map(photo => (
                 <Carousel.Item 
                 key={photo.src}
                 interval={2500}
@@ -31,9 +32,10 @@ const CarouselContainer = () => {
                         <h3>{photo.caption}</h3>
                     </div>
                 </Carousel.Item>
-            ))}
+            ))
+            }
         </Carousel>
-    )
-}
+    );
+};
 
 export default CarouselContainer;
