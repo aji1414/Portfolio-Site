@@ -12,6 +12,7 @@ import uuid from "react-uuid";
 const useStyles = makeStyles((theme) => ({
     paper: {
         position: "absolute",
+        padding:"40px",
         width: 400,
         height: 770,
         backgroundColor: "rgb(223, 232, 247)",
@@ -28,8 +29,8 @@ const PortfolioPreview = ({ projects, displayTech }) => {
     const classes = useStyles();
 
     // getModalStyle is not a pure function, we roll the style only on the first render
-    const [modalStyle] = useState({ top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
-    const [closeModal] = useState({background:"none",color:"red",fontSize:"2em", cursor:"pointer"})
+    const [modalStyle] = useState({top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
+    const [closeModal] = useState({display:"block",background:"none",color:"red",fontSize:"2em", cursor:"pointer"})
     const [modalThumbnailStyle] = useState({width:"350px"});
     const [open, setOpen] = useState(false);
     const [modalDetails, setModalDetails] = useState({
@@ -58,7 +59,6 @@ const PortfolioPreview = ({ projects, displayTech }) => {
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
-            <span onClick={handleClose} style={closeModal}>&#10007;</span>
             <h1 className="simple-modal-title text-center">{modalDetails.name}</h1>
             <div className="thumbnailContainer d-flex justify-content-center"><img style={modalThumbnailStyle} src={modalDetails.thumbnail} alt="modal-prev"></img></div>
             <p className="text-center font-italic mt-4" id="simple-modal-description">{modalDetails.description}</p>
@@ -72,7 +72,10 @@ const PortfolioPreview = ({ projects, displayTech }) => {
                 onClick={(e) => {
                     e.preventDefault()
                     window.open(modalDetails.link, "_blank")
-                }} type="button" className="btn border border-info"><a className="font-weight-bold" href={modalDetails.link}>CHECK IT OUT</a></button>
+                }} type="button" className="btn border border-info"><a className="font-weight-bold" href={modalDetails.link}>CHECK IT OUT</a>
+            </button>
+            <span onClick={handleClose} style={closeModal}>&#10007;</span>
+
         </div>
     );
 
@@ -82,16 +85,19 @@ const PortfolioPreview = ({ projects, displayTech }) => {
             {projects.map(project => (
                 project.tech.includes(displayTech) && <PortfolioItem handleOpen={handleOpen} key={uuid()} project={project} />
             ))}
-
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
-            >   
-                
-                {body}
-            </Modal>
+            
+            <div className="testing mx-auto">
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                >   
+                    
+                    {body}
+                </Modal>
+            </div>
+            
         </div>
     )
 };
