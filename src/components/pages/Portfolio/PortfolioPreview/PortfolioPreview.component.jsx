@@ -59,7 +59,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
-            <h1 className="simple-modal-title text-center">{modalDetails.name}</h1>
+            <h1 className="simple-modal-title text-center mt-5">{modalDetails.name}</h1>
             <div className="thumbnailContainer d-flex justify-content-center"><img style={modalThumbnailStyle} src={modalDetails.thumbnail} alt="modal-prev"></img></div>
             <p className="text-center font-italic mt-4" id="simple-modal-description">{modalDetails.description}</p>
             <h4 className="techListTitle mt-4">Technology</h4>
