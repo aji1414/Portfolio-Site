@@ -46,7 +46,7 @@ const AboutMe = () => (
             any freelance opportunities you'd like to work with me on,
             go to my <Link className="contactLink" to="/contact-me">contact page</Link> and shoot me an email!
         </p>
-        <CustomButton className="buttons"><a className="downloadLink"href="https://drive.google.com/file/d/1H8AI9yH_jLDFtCpv8NXpM9vMNOaQCfIB/view?usp=sharing" download>Download CV</a></CustomButton>
+        <a className="downloadLink" href="https://drive.google.com/file/d/1H8AI9yH_jLDFtCpv8NXpM9vMNOaQCfIB/view?usp=sharing" download><CustomButton className="buttons">Download CV</CustomButton></a>
     </div>
 );
 

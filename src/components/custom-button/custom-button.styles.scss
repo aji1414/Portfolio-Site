@@ -21,6 +21,14 @@
         a{
             color:white !important;
         }
+
+        Link a{
+            color:white !important;
+        }
         
+    }
+
+    .downloadLink &:hover{
+        color:white;
     }
 }
