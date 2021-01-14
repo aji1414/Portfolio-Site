@@ -29,7 +29,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
     const classes = useStyles();
 
     // getModalStyle is not a pure function, we roll the style only on the first render
-    const [modalStyle] = useState({top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
+    const [modalStyle] = useState({overflow: "scroll",top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
     const [closeModal] = useState({display:"block",background:"none",color:"red",fontSize:"2em", cursor:"pointer"})
     const [modalThumbnailStyle] = useState({width:"350px"});
     const [holderStyle] = useState({visibility:"hidden"})
