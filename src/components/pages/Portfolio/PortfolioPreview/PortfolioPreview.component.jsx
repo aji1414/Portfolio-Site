@@ -32,6 +32,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
     const [modalStyle] = useState({top: "50%", left: "50%", transform: `translate(-50%, -50%)`});
     const [closeModal] = useState({display:"block",background:"none",color:"red",fontSize:"2em", cursor:"pointer"})
     const [modalThumbnailStyle] = useState({width:"350px"});
+    const [holderStyle] = useState({visibility:"hidden"})
     const [open, setOpen] = useState(false);
     const [modalDetails, setModalDetails] = useState({
         name: "",
@@ -59,6 +60,7 @@ const PortfolioPreview = ({ projects, displayTech }) => {
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
+            <h1 style={holderStyle}>Holder</h1>
             <h1 className="simple-modal-title text-center mt-5">{modalDetails.name}</h1>
             <div className="thumbnailContainer d-flex justify-content-center"><img style={modalThumbnailStyle} src={modalDetails.thumbnail} alt="modal-prev"></img></div>
             <p className="text-center font-italic mt-4" id="simple-modal-description">{modalDetails.description}</p>
