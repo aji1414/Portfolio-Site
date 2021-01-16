@@ -37,7 +37,7 @@ const AboutMe = () => (
             <li className="mb-2">I played American football for 5 years with 2 of those at European level</li>
             <li className="mb-2"><strong>HUGE</strong> motor racing fan and regular competitor in online simulation racing and go karts</li>
             <li className="mb-2">I <strong>love</strong> to read both non-fiction - and more recently fiction</li>
-            <li className="mb-2">Fluent in Spanish and currently learning French</li>
+            <li className="mb-2">Fluent in Spanish. French is next on the list!</li>
             <li className="mb-2">Avid chess player - If you find me completely distracted by my phone - chances are I'm not on twitter, I'm about to checkmate someone :)</li>
         </ul>
 

@@ -27,7 +27,7 @@ const HomepagePreview = ({triggerBackground}) => {
             className="enterButton" 
             variant="contained"
             onClick={triggerBackground}>
-                Learn More
+                Developer
             </Button>
         </div>   
     </div>

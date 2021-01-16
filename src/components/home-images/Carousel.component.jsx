@@ -10,6 +10,7 @@ import football3 from "../../assets/HomeImages/football3.jpg";
 import Chess from "../../assets/HomeImages/Chess.jpg";
 import Karting from "../../assets/HomeImages/Karting.jpg";
 import SimRacing from "../../assets/HomeImages/SimRacing.jpg";
+import Monkeywreench from "../../assets/HomeImages/Monkeywreench.jpg";
 
 const CarouselContainer = () => {
     const photos = [
@@ -18,6 +19,7 @@ const CarouselContainer = () => {
         {src:Madrid, caption:"With amigos in Madrid"},
         {src:Test, caption:"Against The Blitz"},
         {src:SimRacing, caption:"Racetrack at home"},
+        {src:Monkeywreench, caption:"Monkeywreench, a great series!"},
         {src:Chess, caption:"Sibling rivalry"},
         {src:Warriors2, caption:"A friendly hug"},
     ];

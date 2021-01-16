@@ -60,22 +60,25 @@ Technologies.defaultProps = {
         { skill: "Bootstrap", rating: 80 },
         { skill: "Sass", rating: 80 },
         { skill: "jQuery", rating: 80 },
-        { skill: "Graph ql", rating: 70},
-        { skill: "Flask", rating: 60 },
+        { skill: "GraphQL", rating: 70},
         { skill: "NodeJS", rating: 70 },
         { skill: "MongoDB", rating: 70 },
         { skill: "Mongoose", rating: 70 },
         { skill: "Firebase", rating: 70 },
+        { skill: "Flask", rating: 60 }
     ],
     tools: [
         { skill: "Responsive Design", rating: 90 },
-        { skill: "Git", rating: 80 },
+        { skill: "Git/Github", rating: 80 },
         { skill: "API Interaction", rating: 80 }
     ],
     softSkills: [
         { skill: "Teamwork", rating: 90 },
-        { skill: "Problem solving", rating: 90 },
-        { skill: "Communication", rating: 90 }
+        { skill: "Problem Solving", rating: 90 },
+        { skill: "Communication", rating: 90 },
+        { skill:"Report writing/editing",rating:85},
+        { skill:"Presentations", rating:80}
+        
     ]
 };
 
