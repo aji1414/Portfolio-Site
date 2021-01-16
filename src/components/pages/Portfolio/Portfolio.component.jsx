@@ -10,7 +10,7 @@ import PortfolioPreview from "./PortfolioPreview/PortfolioPreview.component";
 
 const techList = [
     ["ALL", true],
-    ["PYTHON", false],
+    // ["PYTHON", false],
     ["REACT", false],
     ["NODE JS", false],
     ["JAVASCRIPT", false],

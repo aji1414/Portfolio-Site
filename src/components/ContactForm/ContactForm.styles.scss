@@ -1,6 +1,7 @@
 .contactFormContainer{
     width: 60%;
     margin: 0 auto;
+    height: 100vh;
     cursor: none;
     input{
         border-radius: 100px;
@@ -29,6 +30,7 @@
         font-size: 1.2em;
         font-weight: 700;
         padding: 2em;
+        margin-top: 150px;
 
         &.disabledButton{
             opacity: 0.8;
