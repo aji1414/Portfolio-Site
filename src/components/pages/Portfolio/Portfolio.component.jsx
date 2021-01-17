@@ -12,6 +12,7 @@ const techList = [
     ["ALL", true],
     // ["PYTHON", false],
     ["REACT", false],
+    ["REDUX", false],
     ["NODE JS", false],
     ["JAVASCRIPT", false],
     ["BOOTSTRAP", false],
