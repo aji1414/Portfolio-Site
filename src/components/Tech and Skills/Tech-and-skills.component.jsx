@@ -59,6 +59,7 @@ Technologies.defaultProps = {
         { skill: "Redux(thunks, sagas, hooks)", rating: 80 },
         { skill: "Bootstrap", rating: 80 },
         { skill: "Sass", rating: 80 },
+        { skill: "Styled Components", rating: 80},
         { skill: "jQuery", rating: 80 },
         { skill: "GraphQL", rating: 70},
         { skill: "NodeJS", rating: 70 },
